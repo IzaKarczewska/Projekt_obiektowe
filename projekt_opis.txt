@@ -1,0 +1,19 @@
+Podróże samolotem stają się coraz bardziej popularne. Rozwijane są kolejne połączenia między krajami a nawet kontynentami, rozpowszechniane są tanie linie lotnicze.
+Staje się to dużo łatwiejsze i więcej osób ma ochotę zwiedzać świat.
+Czy zastanawiałeś się jednak kiedyś, jaki jest cel podróży samolotem większości ludzi? Czy są one z powodów biznesowych czy prywatnych? Analizę przeprowadzę na 
+przykładzie danych jednej z linii lotniczych.
+
+kolumna Type of Travel z https://www.kaggle.com/datasets/sjleshrac/airlines-customer-satisfaction
+
+
+Podczas każdego lotu występuje ryzyko wypadku/katastrofy. Mimo, że jest to zjawisko dosyć rzadkie, na podstawie zbioru danych przeanalizuję
+średnią liczbe zgonów podczas historycznych katastrof powietrznych
+
+kolumna ground https://www.kaggle.com/datasets/nguyenhoc/plane-crash
+
+
+
+Podczas lotu ważnych jest wiele aspektów, takich jak chociażby darmowe posiłki, jakość obsługi, komfort siedzeń czy czystość.
+Sprawdźmy, jaka jest średnia ocena pasażerów w kontekście porządku na pokładzie samolotów.
+
+kolumna Cleanliness z https://www.kaggle.com/datasets/johndddddd/customer-satisfaction?select=satisfaction.xlsx
