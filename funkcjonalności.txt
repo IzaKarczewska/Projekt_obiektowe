@@ -1,0 +1,20 @@
+Program pracuje na plikach dotyczących transportu samolotowego. Wszystkie trzy pliki są w formacie csv.
+
+Przy każdorazowym wczytaniu nowego pliku sprawdzam czy plik załadował się poprawnie, czy on w ogóle jest.
+Plik jest czytamy za pomocą fstreama. Dane są czytane z pomocą biblioteki vector,sstream, oraz map.
+
+W pierwszej analizie interesuje mnie jaki procent wszystkich podróży to podróże biznesowe, a jaki to prywatne.
+Liczby przeliczone są na procenty aby lepiej zobaczyć ich udział w ogólnej liczbie lotów.
+
+
+W drugiej analizie wykorzystałam kontener map do przechowania pary rok-liczba ofiar śmiertelnych. Potrzebna tu była modyfikacja wczytywania kolumn,
+ponieważ w drugiej kolumnie dane mogą być wpisywane w cudzysłowie z przecinkiem w śrdoku. Gdybym użyła tutaj tylko jednego getline, analiza nie przebiegłą by prawidłowo.
+Potrzebne było odczytanie czterech ostatnich cyfr z kolumny date, aby uzyskać rok. 
+Po wczytaniu wszystkich rekordów sprawdzam, czy klucz jest juz w naszej mapie czy musimy go dodać. Jeśli jest, to dodaję do poprzedniej liczby zgonów odczytaną w danej linii. 
+W innym przypadku tworzę nowy element. Na końcu, w celu wybrania roku z największą liczbą ofiar śmiertelnych używam pętli for sprawdzając wartośc i ewentualnie podmieniając nasz szukany klucz.
+
+
+3 analiza bazuje na ocenach pasażerów. Plik jest bogaty w opinie na temat różnych aspektów podróży, ale ja wybrałam czystość na pokładzie.
+Wstępnie sprawdzam czy dobrze oceniłam, że oceny są do 5 gwiazdek. W programie zczytuje liczbe 5 gwiazdek, 0 gwiazdek oraz dodaje każdą wartość do ogólnej zmiennej.
+Po zliczeniu liczby rekordów oraz sumarycznej oceny czystości mogę obliczyć średnią ocenę.
+Jeśli ta ocena będzie niższa niż 4 chcę wypisać, że linia lotnicza musi poprawić swoją czystość.  
