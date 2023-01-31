@@ -9,7 +9,7 @@ kolumna Type of Travel z https://www.kaggle.com/datasets/sjleshrac/airlines-cust
 Podczas każdego lotu występuje ryzyko wypadku/katastrofy. Mimo, że jest to zjawisko dosyć rzadkie, na podstawie zbioru danych przeanalizuję
 w którym roku w wyniku takich zdarzeń zginęło najwięcej osób.
 
-kolumna ground oraz date https://www.kaggle.com/datasets/nguyenhoc/plane-crash
+kolumna fatalities oraz date https://www.kaggle.com/datasets/saurograndi/airplane-crashes-since-1908?fbclid=IwAR03bv5aVMejkc51aFFfTi74pLBWV_8ebwqYxpM-zTIlz7DQASTYSgjqKUU
 
 
 
