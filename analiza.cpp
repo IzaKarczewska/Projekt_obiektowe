@@ -215,6 +215,11 @@ int main()
     double dbRating = stod( sRating );
     cleanliness += dbRating;
     all_3 += 1;
+    if( dbRating > 5 ) 
+    {
+      cout << " THERE ARE RATINGS OVER 5 STARS!";
+      return 0;
+    }
     if( dbRating == 0 )
     {
       zero += 1;
